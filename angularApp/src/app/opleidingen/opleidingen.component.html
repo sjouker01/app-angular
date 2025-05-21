@@ -1,1 +1,13 @@
-<p>opleidingen works!</p>
+
+<section class="opleiding">
+    <h2>opleidingen</h2>
+    <ul>
+        <li *ngFor="let opleiding of opleidingen">
+            <h3>{{opleiding.naamOpleiding}}</h3>
+            <p>{{opleiding.description}}</p>
+            <p>{{opleiding.locatie}}</p>
+            <p>{{opleiding.datumstart}}</p>
+            <p>{{opleiding.datumstop}}</p>
+        </li>
+    </ul>
+</section>

@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, inject} from '@angular/core';
+import { WerkService } from './werk.service';
 
 @Component({
   selector: 'app-werk',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './werk.component.html',
-  styleUrl: './werk.component.scss'
+  styleUrl: './werk.component.scss',
 })
 export class WerkComponent {
-
+  werkService = inject(WerkService);
+  werkervaring =  this.werkService.getWerkervaringList()
 }
+
+

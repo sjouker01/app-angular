@@ -1,1 +1,21 @@
-<p>werk works!</p>
+
+
+<section class="werkErvaring">
+    <h2>werkErvaring</h2>
+    <ul>
+        <li *ngFor="let werkvaring of werkervaring">
+            <h4> {{werkvaring.bedrijf}}</h4>
+            <p>{{werkvaring.functie}}</p>
+            <p>{{werkvaring.beschrijving}}</p>
+            <p>{{werkvaring.locatie}}</p>
+            <p>{{werkvaring.datumstart}}</p>
+            <p>{{werkvaring.datumstop}}</p>
+
+        </li>
+    </ul>
+</section>
+<!-- 
+ng for is om array items in teladen bij html van ts
+dus ngFor= let werk of werkvaringen haald die alles op en voeg die dat toe  -->
+<!-- met ngif kan je gebruiken op momenten dat je dingen wilt verstoppen op sommigen momenten zoals na en vooor inloggen dus als je bijv nog niet ingelogd ben kan je <p><ngif="isloggedin ">
+    welkom</p> niet zien en als je dan ingelogged ben kan je dat wel zien  -->
