@@ -1,0 +1,37 @@
+// Sidebar container
+nav {
+  width: 70px;
+  min-height: 100vh;
+  
+  background: #23272f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.07);
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5vh;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  color: #00e676;
+}
+i:hover {
+  color: #fff;
+}
